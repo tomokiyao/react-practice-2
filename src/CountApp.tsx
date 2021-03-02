@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
-const CountApp = () => {
-  const [count, setCount] = useState(0);
+const CountApp: React.FC = () => {
+  const [count, setCount] = useState<number>(0);
   const plusOne = () => {
-    setCount(count + 1)
-  }
+    setCount(count + 1);
+  };
   const minusOne = () => {
-    setCount(count - 1)
-  }
-  
+    setCount(count - 1);
+  };
+
   return (
     <div>
       <h1>カウンターApp</h1>
@@ -19,6 +19,6 @@ const CountApp = () => {
       </div>
     </div>
   );
-}
+};
 
-export default CountApp
+export default CountApp;
